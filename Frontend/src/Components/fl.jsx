@@ -53,7 +53,7 @@ const FeedbackList = () => {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const response = await fetch('http://localhost:3001/feedback');
+        const response = await fetch('https://techy-software-nexus-backend.onrender.com/feedback');
         if (!response.ok) {
           throw new Error('Failed to fetch feedback');
         }
