@@ -26,7 +26,7 @@ const Feedback = ({ userId }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/submit-feedback', {
+      const response = await fetch('https://techy-software-nexus-backend.onrender.com/submit-feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
