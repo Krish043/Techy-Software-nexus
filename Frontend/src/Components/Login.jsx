@@ -19,7 +19,7 @@ function Login({ onLogin }) {
       return;
     }
 
-    axios.post('http://localhost:3001/login', { email, password })
+    axios.post('https://techy-software-nexus-backend.onrender.com/login', { email, password })
       .then(result => {
         console.log(result);
         if (result.data === "Success") {
