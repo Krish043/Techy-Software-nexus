@@ -18,7 +18,7 @@ const Signup = () => {
       return;
     }
 
-    axios.post('http://localhost:3001/signup', { name, email, password })
+    axios.post('https://techy-software-nexus-backend.onrender.com/signup', { name, email, password })
       .then(result => {
         console.log(result);
         navigate('/login');
